@@ -179,6 +179,8 @@
 }
 </style>
 
+
+
 </head><body>
 <title>Attitude and Engagement</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -1001,4 +1003,84 @@ Behaviour</h1>
 })();
 </script>
 
+<style id="final-all-slides-fit-fix">
+/* FINAL FIX: compact every slide to one desktop viewport without deleting content. */
+@media (min-width: 1024px) {
+  html { scroll-snap-type: y mandatory !important; }
+  body { padding-inline: 0 !important; font-size: 1rem !important; }
+  main { width: 100%; }
+  .scene {
+    box-sizing: border-box !important;
+    height: 100vh !important;
+    height: 100svh !important;
+    min-height: 100svh !important;
+    max-height: 100svh !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 4.4rem 3vw 1.5rem !important;
+    scroll-snap-align: start !important;
+    scroll-snap-stop: always !important;
+  }
+  .scene:first-child { padding-top: 4.4rem !important; }
+  .scene > .wrap {
+    width: 100% !important;
+    max-width: 1560px !important;
+    margin-inline: auto !important;
+    zoom: clamp(.68, calc((100svh - 65px) / 830), .92) !important;
+  }
+  .split-left .col, .split-right .col { max-width: min(690px, 52vw) !important; }
+  h1 { font-size: clamp(2.8rem, 4.8vw, 5.2rem) !important; line-height: 1 !important; margin-block: .3rem !important; }
+  h2 { font-size: clamp(2.15rem, 3.2vw, 3.4rem) !important; line-height: 1.04 !important; margin-block: .35rem !important; }
+  h3 { font-size: 1.28rem !important; line-height: 1.15 !important; }
+  p { line-height: 1.35; }
+   .eyebrow { font-size: .82rem !important; margin-bottom: .5rem !important; }
+   .sub { font-size: 1.2rem !important; line-height: 1.25 !important; margin-top: .4rem !important; }
+  .head-wide { margin-bottom: .8rem !important; }
+  .stack { gap: .55rem !important; margin-top: .65rem !important; }
+  .grid2, .grid3 { gap: .75rem !important; }
+  .card > .in { padding: .8rem 1rem !important; }
+   .card .def { font-size: 1.15rem !important; margin: .4rem 0 .5rem !important; }
+   .quote { font-size: 1.08rem !important; line-height: 1.3 !important; }
+  .box { padding: .6rem .75rem !important; }
+   .art { max-height: 112px !important; margin: 0 auto .45rem !important; }
+   .art.tri { max-height: 126px !important; margin-top: .45rem !important; }
+  .ico { width: 2.65rem !important; height: 2.65rem !important; }
+  .ico .ms { font-size: 1.45rem !important; }
+  .ico.lg { width: 3.2rem !important; height: 3.2rem !important; }
+  .ico.lg .ms { font-size: 1.75rem !important; }
+  .id { margin-top: .7rem !important; max-width: 560px !important; }
+  .id dl { gap: .35rem .8rem !important; }
+  .id dd { font-size: 1.08rem !important; }
+  .id .top { margin-bottom: .45rem !important; padding-bottom: .4rem !important; }
+  .scroll-hint { margin-top: .6rem !important; }
+  .keys { gap: .45rem !important; margin-top: .55rem !important; }
+   .keys li, .strat li { font-size: 1.05rem !important; line-height: 1.25 !important; }
+  .strat { gap: .45rem !important; }
+  .hub { grid-template-columns: minmax(0,1fr) 145px minmax(0,1fr) !important; gap: .65rem !important; }
+  .orb { width: 145px !important; height: 145px !important; font-size: .9rem !important; }
+  .hub .in p { font-size: .98rem !important; }
+  .banner { margin-top: .7rem !important; padding: .75rem 1rem !important; font-size: 1.06rem !important; }
+  .row { gap: .55rem !important; }
+  .row .tag { min-width: 6.5rem !important; }
+  .row .tag b { font-size: 1.15rem !important; }
+   .eq { font-size: 1.06rem !important; gap: .5rem !important; }
+  .by { margin-top: .65rem !important; }
+  .by h3 { font-size: 1.28rem !important; }
+  .foot { margin-top: .65rem !important; }
+  .scene:not(.split-left):not(.split-right)::before { top: 4.5rem !important; font-size: clamp(4rem, 8vw, 7rem) !important; }
+  .scene.split-left::after, .scene.split-right::after { bottom: 1rem !important; }
+}
+/* Shorter laptop windows need an extra compact layout. */
+@media (min-width: 1024px) and (max-height: 720px) {
+  .scene { padding-top: 3.8rem !important; padding-bottom: 1rem !important; }
+  .scene:first-child { padding-top: 3.8rem !important; }
+  .scene > .wrap { zoom: clamp(.64, calc((100svh - 60px) / 840), .80) !important; }
+  .art { max-height: 84px !important; }
+  .art.tri { max-height: 98px !important; }
+  .head-wide { margin-bottom: .5rem !important; }
+  .stack { gap: .4rem !important; margin-top: .45rem !important; }
+  .card > .in { padding: .76rem .95rem !important; }
+}
+</style>
 </body></html>
